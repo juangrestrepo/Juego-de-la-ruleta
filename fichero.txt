@@ -1,0 +1,2 @@
+﻿Este es el texto que será mostrado<br>una vez que haya sido leído
+ 

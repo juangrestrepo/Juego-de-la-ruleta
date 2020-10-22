@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <script src="DatosEnNodo.js"></script>
+    <script src="NodoDoble.js"></script>
+    <script src="ListaDoblementeLigadaCircular.js"></script>
+    <script src="archivo2.js"></script>
+    <title>Apuestas</title>
+</head>
+
+<body id="bodyRuleta">
+    <div id="ruleta2">
+        <div id="superior">
+            <div id="lasMonedas" class="monedas">
+                <div class="moneda1" id="moneda1">0</div>
+                <div class="moneda2" id="moneda2">0</div>
+                <div class="moneda3" id="moneda3">0</div>
+                <div class="moneda4" id="moneda4">0</div>
+                <div class="moneda5" id="moneda5">0</div>
+            </div>
+            <div id="central">
+                <h1 id="jugadorActual">Jugador número 1</h1>
+                <h1 id="aa"></h1>
+                <div id="ingresoDeDinero">
+                    <form id="formularioDinero">
+                    <div id="formulario_dinero">
+                        <label id="label_ingresoDinero" for="dineroDisponible">Cantidad de dinero:  </label>
+                        <input type="number" id="dineroDisponible" min="2000" />
+                    </div>
+                    <div class="button1">
+                        <input type="button" class="boton11" id="boton_1" name="" value="Apostar" onclick="apostar()">
+                        <input type="button" class="boton11" id="boton_2" name="" value="Pasar" onclick="pasar()">
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div id="lateral2">
+
+            </div>
+        </div>
+        
+        <div id="tablero">
+            <div id="principal1">
+                <div id="zonaCero" onclick="apuesta(0)">
+
+                </div>
+                <div id="zonaNumeros">
+                    <div class="fila">
+                        <div class="opcionNumero" onclick="apuesta(3)"></div>
+                        <div class="opcionNumero" onclick="apuesta(6)"></div>
+                        <div class="opcionNumero" onclick="apuesta(9)"></div>
+                        <div class="opcionNumero" onclick="apuesta(12)"></div>
+                        <div class="opcionNumero" onclick="apuesta(15)"></div>
+                        <div class="opcionNumero" onclick="apuesta(18)"></div>
+                        <div class="opcionNumero" onclick="apuesta(21)"></div>
+                        <div class="opcionNumero" onclick="apuesta(24)"></div>
+                        <div class="opcionNumero" onclick="apuesta(27)"></div>
+                        <div class="opcionNumero" onclick="apuesta(30)"></div>
+                        <div class="opcionNumero" onclick="apuesta(33)"></div>
+                        <div class="opcionNumero" onclick="apuesta(36)"></div>
+                        <div class="opcionNumero" onclick="apuesta(37)"></div>
+                    </div>
+                    <div class="fila">
+                        <div class="opcionNumero" onclick="apuesta(2)"></div>
+                        <div class="opcionNumero" onclick="apuesta(5)"></div>
+                        <div class="opcionNumero" onclick="apuesta(8)"></div>
+                        <div class="opcionNumero" onclick="apuesta(11)"></div>
+                        <div class="opcionNumero" onclick="apuesta(14)"></div>
+                        <div class="opcionNumero" onclick="apuesta(17)"></div>
+                        <div class="opcionNumero" onclick="apuesta(20)"></div>
+                        <div class="opcionNumero" onclick="apuesta(23)"></div>
+                        <div class="opcionNumero" onclick="apuesta(26)"></div>
+                        <div class="opcionNumero" onclick="apuesta(29)"></div>
+                        <div class="opcionNumero" onclick="apuesta(32)"></div>
+                        <div class="opcionNumero" onclick="apuesta(35)"></div>
+                        <div class="opcionNumero" onclick="apuesta(38)"></div>
+                    </div>
+                    <div class="fila">
+                        <div class="opcionNumero" onclick="apuesta(1)"></div>
+                        <div class="opcionNumero" onclick="apuesta(4)"></div>
+                        <div class="opcionNumero" onclick="apuesta(7)"></div>
+                        <div class="opcionNumero" onclick="apuesta(10)"></div>
+                        <div class="opcionNumero" onclick="apuesta(13)"></div>
+                        <div class="opcionNumero" onclick="apuesta(16)"></div>
+                        <div class="opcionNumero" onclick="apuesta(19)"></div>
+                        <div class="opcionNumero" onclick="apuesta(22)"></div>
+                        <div class="opcionNumero" onclick="apuesta(25)"></div>
+                        <div class="opcionNumero" onclick="apuesta(28)"></div>
+                        <div class="opcionNumero" onclick="apuesta(31)"></div>
+                        <div class="opcionNumero" onclick="apuesta(34)"></div>
+                        <div class="opcionNumero" onclick="apuesta(39)"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="principal2">
+                <div id="vacio1">
+                </div>
+                <div id="inferior_opciones">
+                    <div class="inferior_opciones2">
+                        <div class="docenas" onclick="apuesta(40)"></div>
+                        <div class="docenas" onclick="apuesta(41)"></div>
+                        <div class="docenas" onclick="apuesta(42)"></div>
+                    </div>
+                    <div class="inferior_opciones2">
+                        <div class="inferior_opciones3" onclick="apuesta(43)"></div>
+                        <div class="inferior_opciones3" onclick="apuesta(44)"></div>
+                        <div class="inferior_opciones3" onclick="apuesta(45)"></div>
+                        <div class="inferior_opciones3" onclick="apuesta(46)"></div>
+                        <div class="inferior_opciones3" onclick="apuesta(47)"></div>
+                        <div class="inferior_opciones3" onclick="apuesta(48)"></div>
+                    </div>
+                </div>
+                <div id="vacio2">
+                </div>
+            </div>
+        </div>
+        <div id="inferior">
+            <label id="dineroActual">Cantidad de dinero actualizada</label>
+            <input type="button" id="boton_3" name="" value="Continuar" onclick="continuar()">
+            <input type="button" id="boton_4" name="" value="Siguiente" onclick="mostrarPagos()">
+        </div>
+       
+    </div>
+    
+</body>
+
+</html>

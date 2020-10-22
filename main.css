@@ -1,0 +1,470 @@
+#principal{
+    background-image: url("img/fondo_inicio.jpg");
+    background-repeat: no-repeat;
+    size: 100%;
+}
+#superior1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-family: 'Lobster', cursive;;
+    font-size: 50px;
+    font-weight: 200;
+    margin-bottom: 61px;
+}
+#inferior1{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color:black; 
+    opacity:0.6;
+    font-family: 'Lobster', cursive;
+    height: 250px;
+    margin: 10px;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 200px;
+}
+/*codigo ruleta version 1*/
+a{
+    font-size: 50px;
+    color:wheat;
+    text-decoration-line: overline;
+}
+.fondo_osc{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fondor{
+    background-image: url("img/fondo_inicio3.png");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+/*#fondoNegro{
+    display: flex; 
+    background-color:black; 
+    opacity:0.6;
+    font-family: 'Lobster', cursive;
+    height: 734px;
+    margin: 10px;
+}*/
+.tit1{
+	text-align: center;
+	visibility: h
+}
+
+.mesa{
+	width: 800px;
+	float: top;
+}
+
+.oo{
+	float: top;
+}
+
+.cuantas, .apuestas{
+    visibility: hidden;
+}
+
+input[type=number]{
+    width: 60px;
+} 
+#divCantidadJ{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+#seleccionJugadores{
+    font-family: 'Lobster', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 208px;
+    color: wheat;
+    margin: -28px 0px 0px 0px;
+}
+#indicarApuestas{
+    font-family: 'Lobster', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px; 
+    height: 10px;
+    padding-bottom: 10px;
+    color: blanchedalmond;
+}
+.opFormulario{
+    margin: 7px;
+}
+#letrero{
+    margin: 0px;
+}
+#formularioApuestas {
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#for{
+    margin: 10px;
+}
+.labelFormulario{
+    margin:9px;
+    font-family: 'Lobster', cursive;
+}
+#mesaDeJuego{
+    background-image: url("img/tapete_ruleta.png");
+    width: 610px;
+    height: 324px;
+    background-repeat: round;
+    z-index: 1;
+}
+.botones{
+    margin: 30px;
+    color:white;
+    border-radius: 6px;
+    border: 2px solid rgba(182, 152, 96, 0.507);
+    background: transparent;
+    font-family: 'Roboto Slab', serif;
+}
+/*nuevo codigo ruleta version 2*/
+#bodyRuleta{
+    background-image: url("img/fondo_inicio3.png");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+#ruleta2{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#jugadorActual, #aa{
+    height: 51px;
+    width: 258px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    color: #DAC439;
+}
+#aa{position: absolute;top: 30%;visibility: hidden;}
+#label_ingresoDinero{
+    color: rgba(116, 107, 91, 0.979);
+}
+#dineroDisponible{
+    border-radius: 6px;
+    border: 2px solid rgba(180, 164, 135, 0.979);
+    background:rgba(219, 205, 180, 0.979);
+}
+#ingresoDeDinero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 70px;
+    width: 242px;
+    margin-bottom: 14px;
+    font-family: 'Lobster', cursive;
+}
+#formularioDinero{
+    width: 202px;
+    height: 43px;
+}
+#formulario_dinero{
+    font-size: 21px;
+    display: flex;
+    flex-direction: row;
+    width: 229px;
+    height: 25px;
+    margin: 7px;
+}
+.button1{
+    width: 194px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+}
+.boton11{
+    font-family: 'Lobster', cursive;
+    font-size: 10pt;
+    color: black;
+    border-radius: 6px;
+    border: 2px solid rgba(180, 164, 135, 0.979);
+    background:rgba(180, 164, 135, 0.979);
+    margin: 0px 5px;
+
+}
+#tablero{
+    background-image: url("img/tapete_ruleta.png");
+    background-repeat: no-repeat;
+    height: 401px;
+    width: 773px;
+    visibility: hidden;
+}
+
+#tablero:hover{
+    cursor: pointer;
+}
+
+#principal1{
+    display: flex;
+    flex-direction: row;
+    height: 228px;
+}
+#principal2{
+    display: flex;
+    flex-direction: row;
+    height: 172px
+}
+#zonaCero{
+    height: 100%;
+    width: 88px;
+}
+#zonaNumeros{
+    height: 100%;
+    width: 681px;
+    display: flex;
+    flex-direction: column;
+}
+.fila{
+    display: flex;
+    flex-direction: row;
+    height: 34%;
+    width: 100%;
+}
+#vacio1{
+    width: 88px;
+    height: 171px;
+}
+#inferior_opciones{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 630px;
+}
+#vacio2{
+    width: 53px;
+    height: 171px;
+}
+.opcionNumero{
+    height: 100%;
+    width: 8%;
+}
+.opcionFila{
+    height: 100%;
+    width: 57px;
+}
+.inferior_opciones2{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+.inferior_opciones3{
+    height: 100%;
+    width: 16.6%;
+}
+.docenas{
+    height: 100%;
+    width: 100%;
+}
+#dineroActual{
+    margin: 15px;
+    font-family: 'Lobster', cursive;
+    color:  rgba(209, 184, 141, 0.979);
+    font-size: 21px;
+}
+#inferior{
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 300px;
+    align-items: center;
+}
+#boton_3{
+    font-family: 'Lobster', cursive;
+    font-size: 10pt;
+    color: black;
+    border-radius: 6px;
+    border: 2px solid rgba(180, 164, 135, 0.979);
+    background:rgba(180, 164, 135, 0.979);
+    margin: 0px 5px;
+    height: 50px;
+    width: 94ppx;
+    visibility: hidden;
+}
+#superior{
+    display: flex;
+    align-items: center;
+    flex-direction: space-between;
+    height: 100hv;
+    width: 100vw;
+}
+#central{
+    width: 33vw;
+}
+.monedas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 37vw;
+    height: 93px;
+}
+.moneda1{
+    background-image: url("img/moneda_1.png");
+    height: 61px;
+    margin: 5px;
+    width: 61px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    font-size: 21px;
+}
+.moneda2{
+    background-image: url("img/moneda_2.png");
+    height: 61px;
+    margin: 5px;
+    width: 61px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    font-size: 21px;
+}
+.moneda3{
+    background-image: url("img/moneda_3.png");
+    height: 61px;
+    margin: 5px;
+    width: 61px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    font-size: 21px;
+}
+.moneda4{
+    background-image: url("img/moneda_4.png");
+    height: 61px;
+    margin: 5px;
+    width: 61px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    font-size: 21px;
+}
+.moneda5{
+    background-image: url("img/moneda_5.png");
+    height: 61px;
+    margin: 5px;
+    width: 61px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    font-size: 21px;
+}
+
+#boton_4{
+    font-family: 'Lobster', cursive;
+    font-size: 10pt;
+    color: black;
+    border-radius: 6px;
+    border: 2px solid rgba(180, 164, 135, 0.979);
+    background:rgba(180, 164, 135, 0.979);
+    margin: 0px 5px;
+    height: 50px;
+    width: 94px;
+    visibility: hidden;
+}
+
+.tituIns{
+    font-family: 'Lobster';
+    color:  rgba(209, 184, 141, 0.979);
+}
+.bienvenida{
+    font-family: 'Lobster';
+    color: #D1B88D;
+    text-shadow: #000 0px 0px 3px;
+    -webkit-font-smoothing: antialiased;
+    font-size: 200%;
+}
+.tex{
+    text-align: center;
+    width: 50%;
+    font-size: 150%;
+    font-family: 'Lobster Two', cursive;
+    color: #FFFFE9;
+    text-shadow: #fff 0px 1px 2px;
+    -webkit-font-smoothing: antialiased;
+}
+.ej{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.jug1{
+    position: absolute;
+    left: 40.3%;
+    top: 147.3%;
+}
+.jug2{
+    position: absolute;
+    left: 44.9%;
+    top: 147.3%;
+}
+.jug3{
+    position: absolute;
+    left: 49.5%;
+    top: 147.3%;
+}
+.jug4{
+    position: absolute;
+    left: 54.3%;
+    top: 147.3%;
+}
+.jug5{
+    position: absolute;
+    left: 59%;
+    top: 147.3%;
+}
+.bodyManual{
+    background-image: url("img/inferior.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-attachment: fixed;
+    background-size: 115%;
+}
